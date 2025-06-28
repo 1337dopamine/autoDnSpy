@@ -4,9 +4,7 @@
 **Quick install — just paste this into a CMD prompt:**
 
 ```batch
-@powershell -NoProfile -Command ^
-  "Invoke-WebRequest -Uri 'https://github.com/1337dopamine/autoDnSpy/blob/main/installer.cmd?raw=y' -OutFile '%TEMP%\\installer.cmd'; ^
-   Start-Process -FilePath '%TEMP%\\installer.cmd' -Wait -Verb RunAs"
+@powershell -NoProfile -Command "Invoke-WebRequest -Uri 'https://github.com/1337dopamine/autoDnSpy/blob/main/installer.cmd?raw=y' -OutFile '%TEMP%\installer.cmd'; Start-Process -FilePath '%TEMP%\installer.cmd' -Wait -Verb RunAs
 ```
 
 This will:
